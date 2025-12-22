@@ -26,14 +26,12 @@ func main() {
 
 	fmt.Println("Bem-vindo ao toDoList - aqui você realiza suas tarefas")
 	fmt.Println("Comandos: 'add', 'list', 'done', 'end'")
-
+While:
 	for {
-
 		if scanner.Scan() {
 			typedText := scanner.Text()
 
 			switch typedText {
-
 			case "add":
 				fmt.Println("Insira um item na lista: ")
 				scanner.Scan()
@@ -46,6 +44,10 @@ func main() {
 				myList.printList()
 
 			case "done":
+				if len(myList.tasks) == 0 {
+					fmt.Println("Lista vazia!")
+					break
+				}
 				fmt.Println("Digite o número da tarefa que deseja remover:")
 				myList.printList()
 
@@ -53,11 +55,14 @@ func main() {
 				indexRemove := scanner.Text()
 
 				index, _ := strconv.Atoi(indexRemove)
-				myList.Remove(index)
-
+				err := myList.Remove(index)
+				if err != nil {
+					fmt.Printf("%v\n", err)
+				}
 			case "end":
-				break
-
+				break While
+			default:
+				fmt.Println("Token inválido!")
 			}
 		}
 	}
@@ -74,11 +79,15 @@ func (list *TodoList) printList() {
 	}
 }
 
-func (list *TodoList) Remove(index int) {
-
+func (list *TodoList) Remove(index int) error {
 	i := index - 1
-	taskNote := list.tasks[i].note
-	list.tasks = append(list.tasks[:index], list.tasks[i+1:]...)
 
-	fmt.Println("Tarefa '%s' concluída e removida da lista.\n", taskNote)
+	if i < 0 || i >= len(list.tasks) {
+		return fmt.Errorf("Índice inválido!")
+	}
+	taskNote := list.tasks[i].note
+	list.tasks = append(list.tasks[:i], list.tasks[i+1:]...)
+
+	fmt.Printf("Tarefa \"%s\" concluída e removida da lista.\n", taskNote)
+	return nil
 }
