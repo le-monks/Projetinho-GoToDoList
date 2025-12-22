@@ -3,7 +3,6 @@ package main
 import (
 	"exercicio/pipeline"
 	"fmt"
-	"log"
 	"os"
 	//	"log"
 	//	"exercicio/pipeline"
@@ -11,10 +10,8 @@ import (
 
 func main() {
 	fmt.Println("🚀 Iniciando Pipeline Local...")
+
 	filepath := os.Getenv("FEED_BRUTO_PATH")
-	if filepath == "" {
-		log.Fatal(fmt.Errorf("Variável de ambiente não encontrada ou nula"))
-	}
 	// 1. Extract
 	// TODO: Implementar chamada
 	fmt.Println("1. Lendo arquivo...")
