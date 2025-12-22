@@ -21,7 +21,6 @@ func main() {
 
 while:
 	for {
-
 		if scanner.Scan() {
 
 			typedText := scanner.Text()
