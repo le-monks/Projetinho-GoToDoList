@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Loja Teste - Produtos</title>
+    <item>
+      <id>1001</id>
+      <title>Camiseta Básica Branca - P</title>
+      <description>Camiseta 100% algodão, ideal para o dia a dia.</description>
+      <link>http://www.lojateste.com.br/camiseta-basica-branca</link>
+      <image_link>http://www.lojateste.com.br/imagens/1001.jpg</image_link>
+      <price>R$ 49,90</price>
+      <availability>em estoque</availability>
+      <brand>Marca Propria</brand>
+    </item>
+    <item>
+      <id>1002</id>
+      <title>Tênis Esportivo Running - 42</title>
+      <description>Tênis leve com amortecimento para corridas.</description>
+      <link>http://www.lojateste.com.br/tenis-esportivo</link>
+      <image_link>http://www.lojateste.com.br/imagens/1002.jpg</image_link>
+      <price>299.00</price> <!-- Formato diferente intencional -->
+      <availability>pre-order</availability>
+      <brand>EsporteX</brand>
+    </item>
+    <item>
+      <id>1003</id>
+      <title>Smartphone Galaxy S25 Ultra 512GB com Câmera de 200MP e Tela AMOLED de 6.8 polegadas</title> <!-- Título longo para FFT -->
+      <description>O melhor smartphone do mercado com tecnologia de ponta.</description>
+      <link>http://www.lojateste.com.br/smartphone-galaxy</link>
+      <image_link>http://www.lojateste.com.br/imagens/1003.jpg</image_link>
+      <price>R$ 8.999,00</price>
+      <availability>out of stock</availability>
+      <brand>Samsung</brand>
+    </item>
+    <item>
+      <id>1004</id>
+      <title>Boneca de Pano</title>
+      <description>Boneca artesanal.</description>
+      <link>http://www.lojateste.com.br/boneca</link>
+      <image_link>http://www.lojateste.com.br/imagens/1004.jpg</image_link>
+      <price>R$ 0,00</price> <!-- Preço zerado para validar filtro -->
+      <availability>in stock</availability>
+      <brand>Artesanato</brand>
+    </item>
+  </channel>
+</rss>
