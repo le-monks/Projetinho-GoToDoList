@@ -1,0 +1,63 @@
+# ToDo template
+<list type="todolist">
+    <title>ToDoList de Fanta</title>
+    <purpose>Faculdade</purpose>
+    <item>
+        <id>1</id>
+        <description>Estudar pra P1 de Cálculo</description>
+        <startline>22/12/2025</startline>
+        <endline>31/12/2025</endline>
+        <priority>Alta</priority>
+        <done>false</done>
+    </item>
+    <item>
+        <id>2</id>
+        <description>Fazer exercícios de Programação</description>
+        <startline>20/12/2025</startline>
+        <endline>30/12/2025</endline>
+        <priority>Média</priority>
+        <done>false</done>
+    </item>
+</list>
+
+# Shopping list template
+<list type="shoppinglist">
+    <title>Lista de compras Fanta</title>
+    <purpose>Casa</purpose>
+    <item>
+        <id>1</id>
+        <description>Cartela de ovos</description>
+        <quantity>1</quantity>
+        <averageprice currency="BRL">15</averageprice>
+    </item>
+    <item>
+        <id>2</id>
+        <description>Caixa de leite</description>
+        <quantity>2</quantity>
+        <averageprice currency="BRL">10.99</averageprice>
+    </item>
+</list>
+
+# Guest list template
+<list type="guestlist">
+    <title>Lista de convidados do aniversário de Fanta</title>
+    <purpose>Aniversário</purpose>
+    <item>
+        <name>Pedrinho</name>
+        <id>1</id>
+        <contact>11 99999-9999</contact>
+        <agegroup>child</agegroup>
+        <document type="RG">
+            <number>123456789</number>            
+        </document>
+    </item>
+    <item>
+        <name>Pedrão</name>
+        <id>2</id>
+        <contact>11 99999-9999</contact>
+        <agegroup>adult</agegroup>
+        <document type="CPF">
+            <number>12345678900</number>            
+        </document>
+    </item>
+</list>
