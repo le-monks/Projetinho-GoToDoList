@@ -24,7 +24,7 @@ func main() {
 		fmt.Printf("%v", err)
 		return
 	}
-	fmt.Println(string(rawData[:]))
+	fmt.Println(string(rawData))
 
 	// 2. Reduce
 	// TODO: Implementar chamada
